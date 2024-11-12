@@ -31,6 +31,10 @@
     position: relative;
     min-height: 26px;
 }
+
+.header__navbar-item--has-qr:hover .header__qr {
+    display: block;
+}
 .header__navbar-item:hover,
 .header__navbar-icon-link:hover,
 .header__navbar-item-link:hover{
@@ -65,3 +69,52 @@
     cursor: text;
     color: var(--white-color);
 }
+
+/* hedear qr code  */
+
+.header__qr {
+    background-color: var(--white-color);
+    width: 186px;
+    position: absolute;
+    left: 0;
+    top: 118% ;
+    padding: 8px ;
+    border-radius: 2px;
+    display: none;
+    animation: faceIn ease-in 0.3s
+}
+.header__qr::before {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    content: "";
+    left: 0;
+    top: -16px;
+    display: block;
+}
+
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+
+}
+.header__qr-link :first-child {
+    margin-left: 11px;
+}
+
+.header__qr-link :last-child {
+    margin-right: 11px;
+}
+
+
+.header__qr-download-img {
+    height: 15px;
+}
+
+
+
