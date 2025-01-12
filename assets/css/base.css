@@ -203,7 +203,41 @@ html {
     color: var(--primary-color);
 }
 
+/* pagination */
+.pagination {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   align-items: center;
+}
 
+.pagination-item {
+    margin: 0 8px;
+}
+
+.pagination__link {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #939393;
+    text-decoration: none;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+
+
+}
+
+.pagination-item__icon {
+
+}
+
+.pagination-item--active .pagination__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 2px;
+}
 
 
 

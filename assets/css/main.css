@@ -792,7 +792,7 @@
 .header__cart-list-item{
     padding-left: 0;
     list-style: none;
-    height: 56vh;
+    height: 40vh;
     overflow-y: auto;
 }
 
@@ -1205,4 +1205,8 @@ i.home-product-item__like-icon-fill {
     font-weight: 500;
     top: -1;
     position: relative;
+}
+
+.home-product__pagination {
+    margin: 48px 0 32px 0;
 }
