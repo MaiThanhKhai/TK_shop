@@ -186,6 +186,7 @@ html {
     border-radius: 2px;
     background-color: var(--white-color);
     padding: 8px 16px;
+    z-index: 1;
     list-style: none;
     display: none;
 }

@@ -181,8 +181,12 @@
     top: 118%;
     padding: 8px;
     border-radius: 2px;
+    z-index: 1;
     display: none;
-    animation: faceIn ease-in 0.3s
+    animation: faceIn ease-in 0.3s;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+    
+    
 }
 
 .header__qr::before {
@@ -542,6 +546,7 @@
     display: none;
     animation: faceIn ease-in 0.2s;
     cursor: default;
+    z-index: 1;
 }
 
 .header__cart-notice {
@@ -668,6 +673,7 @@
     top: 100%;
     width: 168px;
     list-style: none;
+    z-index: 1;
     box-shadow: 0 1px 2px #e0e0e0;
     padding-left: 0;
     border-radius: 2px;
@@ -723,6 +729,7 @@
 
 .header__search-option-item--active i {
     display: inline-block;
+
 }
 
 .header__search-input:focus ~.header__search-history {
@@ -734,6 +741,7 @@
 .header__search-history{
     position: absolute;
     top: calc(100% + 3px);
+    z-index: 1;
     left: 0;
     width: calc(100% - 16px);
     border-radius: 2px;
@@ -784,7 +792,8 @@
 .header__cart-list-item{
     padding-left: 0;
     list-style: none;
-
+    height: 56vh;
+    overflow-y: auto;
 }
 
 .header__cart-item {
@@ -814,8 +823,17 @@
 .header__cart-item-name {
     font-size: 1.4rem;
     font-weight: 500;
+    line-height: 2rem;
     color: var(--text-color);
+    overflow: hidden;
+    flex: 1;
+    padding-right: 16px;
+    max-height: 4rem;
+    display: -webkit-box;
     margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
 }
 .header__cart-item-price {
     font-size: 1.4rem;
@@ -1013,8 +1031,7 @@
     display: block;
     text-decoration: none;
     position: relative;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 2px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) ;
     transition: transform linear 0.1s;
     will-change: transform;
@@ -1027,8 +1044,11 @@
 .home-product-item__img {
     padding-top: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: contain;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
 } 
 .home-product-item__name {
     font-size: 1.4rem;
@@ -1153,6 +1173,7 @@ i.home-product-item__like-icon-fill {
     right: 0;
     top: 0;
     width: 40px;
+    border-top-right-radius: 2px;
     text-align: center;
     height: 34px;
     background-color: rgba(255, 216, 64, 0.94);
