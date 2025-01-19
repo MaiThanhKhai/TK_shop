@@ -6,6 +6,7 @@
 .header__navbar {
     display: flex;
     justify-content: space-between;
+    height: var(--navbar-height);
 }
 
 .header__navbar-list {
@@ -13,6 +14,7 @@
     padding-left: 0;
     margin-top: 4px 0 0 0;
     display: flex;
+   
 }
 
 .header__navbar-item,
@@ -792,7 +794,7 @@
 .header__cart-list-item{
     padding-left: 0;
     list-style: none;
-    height: 40vh;
+    max-height: 40vh;
     overflow-y: auto;
 }
 
