@@ -39,6 +39,10 @@
     .header__sort-bar {
         display: flex;
     }
+
+    .app_content {
+        padding-top: 8px;
+    }
 }
 
 /* Tablet */
@@ -100,6 +104,7 @@
     }
     .app_content {
         margin: 0 4px;
+
     }
 
 
